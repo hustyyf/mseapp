@@ -1,0 +1,41 @@
+/* .log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+} */
+.showlove {
+  width: 95%;
+  height: 20rpx;
+} 
+.love {
+  height: 20rpx;
+}
+.gyftb {
+  width: 90rpx;
+  height: 90rpx;
+}
+.text {
+  height: 90rpx;
+}
+.gyf {
+  display: flex;  
+  flex-direction: row;
+  align-content: center;
+  height: 150rpx;
+}/* pages/myRent/myRent.wxss */
+.bbq {
+  height: 200rpx;
+
+}
+.tb {
+  width: 90rpx;
+  height: 90rpx;
+}
+.boxxx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

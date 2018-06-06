@@ -1,0 +1,91 @@
+<!--logs.wxml-->
+<form class='table-box' bindsubmit="rentSubmit">
+  <view class='table'>
+    
+    <view class='row firstLine'>
+      <text class='title' name="applicant">姓名:</text>
+      <view class="page-section ">
+        <input value="{{name}}"  auto-focus placeholder="借用联系人姓名" confirm-type="next"/>
+      </view>
+    </view>
+    
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="phone_num">联系电话：</text>
+      <view class="page-section">
+        <input value="{{phone}}"  placeholder="借用联系人手机号码" confirm-type="next"/>
+      </view>
+    </view>
+
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="QQ">QQ:</text>
+      <view class="page-section">
+        <input value="{{QQ}}"  placeholder="借用联系人QQ号" confirm-type="next"/>
+      </view>
+    </view>
+
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="room">租用房间：</text>
+      <picker value="{{index}}" bindchange="bindRoomChange" range="{{roomNum}}">
+        <view >{{roomNum[index]}}</view>
+      </picker>
+    </view>
+
+    <block wx:if="{{index==3}}" >
+      
+      <view class="cut-off"></view>
+      
+      <view class='row'>
+        <text class='title'>多媒体借用：</text>
+        <view >
+          <switch bindchange="switchChange"/>
+        </view>
+      </view>
+    </block>
+    
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="aim_date">租用时间：</text>
+      <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
+          <view >{{date}}</view>
+      </picker>
+    </view>
+
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="start_time">始于</text>
+      <picker mode="time" value="{{time1}}"  bindchange="bindTimeChange1">
+        <view >{{time1}}</view>
+      </picker>
+    </view>
+
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="stop_time">止于</text>
+      <picker mode="time" value="{{time2}}"  bindchange="bindTimeChange2">
+        <view >{{time2}}</view>
+      </picker>
+    </view>
+
+    <view class="cut-off"></view>
+
+    <view class='row'>
+      <text class='title' name="apply_reason">借用理由：</text>
+      <input type="text" placeholder="借用公用房的用途" confirm-type="next"/>
+    </view>
+  </view>
+
+  <button class="confirm" form-type="submit" type="primary" >确认</button>
+</form>
+
+ <!-- <navigator url="../test/test">
+ <button type="default" >现有租用时间</button>
+ </navigator> -->

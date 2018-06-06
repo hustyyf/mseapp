@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="page-section">
+      <view class="page-section-title">请输入你想表白的内容</view>
+      <view class="textarea-wrp">
+        <textarea auto-focus="true" auto-height />
+      </view>
+  </view>
+
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-title">昵称</view>
+      <view class="textarea-wrp">
+        <textarea bindblur="bindTextAreaBlur" auto-height />
+    </view>
+  </view>
+
+  <button bindtap='bindSubmitTap'>提交</button>
+
+  </view>
+
+
+</view>

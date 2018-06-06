@@ -1,0 +1,51 @@
+
+picker{
+  padding: 19rpx 26rpx;
+  width: 61.8%;
+  background-color: #FFFFFF;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80rpx;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 3%;
+}
+
+.title {
+  width:38.2%;
+  
+}
+
+.table {
+  border-width: 5rpx;
+  border-style: groove;
+  border-color: rgb(160, 157, 157);
+  border-radius: 20rpx;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top : 3%;  
+  background-color:#FFFFFF;
+}
+
+.cut-off {
+  height: 3rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-top-style: solid;
+  border-radius: 50%;
+  border-color: rgba(161, 161, 167, 0.815);
+}
+
+.confirm {
+  margin-top: 20rpx;
+  width: 61.8%;
+  margin-bottom: 20rpx;
+}
+.table-box{
+  width: 100%;
+}

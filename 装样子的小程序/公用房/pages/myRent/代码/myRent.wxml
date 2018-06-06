@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="containererererer">
+  <view class="showlove ">
+    <image class="love" >
+    </image>
+  </view>
+  <view class="boxxx">
+    <view class="gyf">
+      <image class="tb" src='resource/icon_component.png'>
+      </image>
+      <text class="text">公用房</text>
+    </view>
+    <view class="bbq">
+      <image class="tb" src='resource/api.png'></image>
+      <text class="text">表白墙</text>
+    </view>
+  </view>
+  <!-- <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block> -->
+</view>

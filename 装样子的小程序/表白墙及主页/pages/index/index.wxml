@@ -1,0 +1,30 @@
+<view class="index">
+  <view class="index-hd">
+    <image class="mse-logo" src="resources/kind/logo.png"></image>
+    <view class="index-desc">欢迎进入材料学院小程序！</view>
+  </view>
+  <view class="index-bd">
+    <view class="kind-list">
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+        <view class="kind-list-item">
+          <navigator id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}"url="lovePage/showingLove">
+            <view class="kind-list-text">{{item.name}}</view>
+            <image class="kind-list-img" src="resources/kind/{{item.id}}.png"></image>
+          </navigator>
+          <view class="kind-list-item-bd {{item.open ?'kind-list-item-bd-show' : ''}}">
+            <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+              <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                <navigator url="pages/{{page}}/{{page}}" class="navigator">
+                  <view class="navigator-text">{{page}}</view>
+                  <view class="navigator-arrow"></view>
+                </navigator>
+              </block>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <cover-image class="outer-cover" hidden="{{hidd}}" style='opacity:{{tmd}}' src="resources/pic/封面.jpg">
+  </cover-image>
+</view>

@@ -1,0 +1,30 @@
+{% if details_list %}
+<form action="/myapp/send/" method="POST">
+    <table border="1"></table>
+        {% csrf_token %}
+        <tr>
+            <th>姓名</th>
+            <th>称谓</th>
+            <th>手机号码</th>
+        </tr>
+        {% for details in details_list %}
+        <tr class="arow">
+
+            <td><input type="text" name="person" value="{{details.person}}"></td>
+            <td><input type="text" name="appellation" value="{{details.appellation}}"></td>
+            <td><input type="text" name="phone" value="{{details.phone}}"></td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+    <input type="text" name="message">
+    
+    <button type="submit">Submit</button>
+</form>
+    
+
+{% else %}
+
+{% endif %}

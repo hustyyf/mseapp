@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>接收者信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+       <h1>接受者信息列表</h1>
+        <ul>
+            {%for j in jieshouzhes%}
+            <li>
+                <a href="/myapp/accepter/{{j.id}}detail/">{{j.jname}}---{{j.jnumber}}</a>
+    
+            </li>
+            {%endfor%}
+    
+    
+        </ul>
+    
+</body>
+</html>

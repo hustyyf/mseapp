@@ -1,0 +1,7 @@
+@import "../common/index.wxss";
+
+.outer-cover {
+  position:absolute;
+  top:0px;
+  opacity: ;
+}

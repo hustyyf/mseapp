@@ -1,0 +1,28 @@
+<!--
+<view class="ttt" >
+  {{listData}}
+  <view wx:for="{{listData}}">
+    {{index}}:{{item.fields.question_text}}
+  </view>
+  {{onlineData}}
+</view>-->
+{{listData}}
+<scroll-view class="table">
+  <view class="tr bg-w">
+    <view class="th">序号</view>
+    <view class="th">问题</view>
+    <view class="th ">发布时间</view>
+  </view>
+  <block wx:for="{{listData}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.pk}}</view>
+      <view class="td">{{item.fields.question_text}}</view>
+      <view class="td">{{item.fields.pub_date}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.pk}}</view>
+      <view class="td">{{item.fields.question_text}}</view>
+      <view class="td">{{item.fields.pub_date}}</view>
+    </view>
+  </block>
+</scroll-view>
